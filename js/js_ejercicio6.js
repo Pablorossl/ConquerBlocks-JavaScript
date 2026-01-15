@@ -1,5 +1,4 @@
-// js_ejercicio6.js
-// Placeholder para Ejercicio 6
+// js/js_ejercicio6.js
 document.addEventListener('DOMContentLoaded', () => {
   console.log('js_ejercicio6 cargado');
 });
