@@ -4,10 +4,25 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Ejercicio 5</title>
+  <link rel="stylesheet" href="../calculator_styles/styles.css">
 </head>
 <body>
-  <h1>Ejercicio 5</h1>
-  <p>Implementa aquí el ejercicio 5.</p>
+  <div class="calculator">
+    <h1 class="small">Calculadora (Estilos generados con IA)</h1>
+    <div class="display-row">
+      <input id="numA" type="number" step="any" placeholder="A">
+      <input id="numB" type="number" step="any" placeholder="B">
+    </div>
+
+    <div class="controls">
+      <button id="addBtn" class="op-btn">Sumar</button>
+      <button id="subBtn" class="op-btn">Restar</button>
+      <button id="mulBtn" class="op-btn">Multiplicar</button>
+      <button id="divBtn" class="op-btn">Dividir</button>
+    </div>
+
+    <div class="result" id="result" aria-live="polite">&nbsp;</div>
+  </div>
   <p><a href="../index.html">Volver al índice</a></p>
   <script src="../js/js_ejercicio5.js"></script>
 </body>

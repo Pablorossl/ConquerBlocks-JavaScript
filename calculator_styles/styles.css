@@ -1,0 +1,102 @@
+/* calculator_styles/styles.css */
+:root{
+  --bg:#f3f4f6;
+  --panel:#1e293b;
+  --button:#64748b;
+  --accent:#f59e0b;
+  --text:#111827;
+  --white:#ffffff;
+}
+html,body{height:100%;}
+body{
+  background: linear-gradient(180deg,var(--bg),#e6eef8);
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:24px;
+  color:var(--text);
+}
+.calculator {
+  width:320px;
+  background: linear-gradient(180deg,#0f1724,#111827);
+  border-radius:16px;
+  box-shadow: 0 10px 30px rgba(2,6,23,0.6), inset 0 1px 0 rgba(255,255,255,0.02);
+  padding:18px;
+  color:var(--white);
+}
+.display-row{
+  display:flex;
+  gap:8px;
+  margin-bottom:12px;
+}
+.display {
+  flex:1 1 auto;
+  background:rgba(255,255,255,0.06);
+  padding:10px 12px;
+  border-radius:8px;
+  font-size:1rem;
+  color:var(--white);
+}
+.controls{
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap:8px;
+}
+input[type="number"]{
+  width:100%;
+  padding:10px 12px;
+  border-radius:8px;
+  border: none;
+  outline:none;
+  box-shadow: inset 0 -2px 0 rgba(0,0,0,0.15);
+  font-size:1rem;
+}
+button{
+  padding:10px 8px;
+  border-radius:8px;
+  border:none;
+  cursor:pointer;
+  font-weight:600;
+  color:var(--panel);
+  background:var(--white);
+  box-shadow: 0 4px 8px rgba(2,6,23,0.2);
+}
+button:hover{filter:brightness(0.98);transform:translateY(-1px)}
+button:active{transform:translateY(0)}
+.op-btn{background:linear-gradient(180deg,#fde68a,#f59e0b); color: #0b1220}
+.result {
+  margin-top:12px;
+  background:rgba(255,255,255,0.06);
+  padding:10px 12px;
+  border-radius:8px;
+  font-size:1.05rem;
+  text-align:right;
+}
+.small{
+  font-size:0.9rem;
+  opacity:0.9;
+}
+
+/* Responsive */
+@media (max-width:360px){
+  .calculator{width:100%;}
+}
+
+/* Mover el enlace "Volver al índice" a la esquina superior izquierda
+   Solo afecta al enlace que sigue a .calculator (evita seleccionar otros links) */
+.calculator + p { margin: 0; }
+.calculator + p a {
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  z-index: 1200;
+  display: inline-block;
+  background: rgba(134, 207, 213, 0.08);
+  color: blue;
+  padding: 6px 10px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 6px 14px rgba(2,6,23,0.35);
+}
