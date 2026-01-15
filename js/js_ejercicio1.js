@@ -17,5 +17,4 @@ document.addEventListener('DOMContentLoaded', () => {
   btn.addEventListener('click', () => {
     document.body.style.backgroundColor = getRandomColor();
   });
-  console.log('js_ejercicio1 cargado y listo');
 });

@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const addBtn = document.getElementById('addBtn');
   const list = document.getElementById('itemList');
 
-  if (!input || !addBtn || !list) {
+  if (!input || !addBtn || !list) { //Buenas prácticas
     console.warn('Elementos #itemInput, #addBtn o #itemList no encontrados en el DOM');
     return;
   }
@@ -42,6 +42,4 @@ document.addEventListener('DOMContentLoaded', () => {
       addItem();
     }
   });
-
-  console.log('js_ejercicio3 cargado y listo');
 });

@@ -5,13 +5,13 @@
 document.addEventListener('DOMContentLoaded', () => {
   const btn = document.getElementById('countBtn'); //Seleccionar contador
   const display = document.getElementById('clickCount'); //Seleccionar boton de click
-  // Comprobar elementos del DOM
+  
   if (!btn || !display) { // Comprobar si falta algun elemento (buenas prácticas)
     console.warn('Elementos #countBtn o #clickCount no encontrados en el DOM');
     return;
   }
 
-  // Persistencia en sessionStorage
+  // SessionStorage
   const KEY = 'ej2_clicks';
   const stored = sessionStorage.getItem(KEY);
   let count = stored ? parseInt(stored, 10) : 0; // Contador inicial desde sessionStorage
@@ -29,8 +29,6 @@ document.addEventListener('DOMContentLoaded', () => {
       console.warn('No se pudo escribir en sessionStorage:', e);
     }
   });
-
-  console.log('js_ejercicio2 cargado y listo (sessionStorage habilitado)');
 });
 
 // GUARDO LOS CLICKS EN EL SESION STORAGE DE EXTRA
