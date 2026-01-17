@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
       case 'mul': out = a * b; break;
       case 'div':
         if (b === 0) { show('Error: división por cero', true); return; }
-        out = a / b; break;
+        out = (a / b).toFixed(2); break;
       default: return;
     }
     show(`Resultado: ${out}`);
