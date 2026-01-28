@@ -2,7 +2,10 @@
 
 Muy buenas a quien corresponda! (Alberto, Bienve... quien sea!)
 
-Aqui dejo los ejercicios de JavaScript. Quería dejar una nota rápida para que sepáis cómo enfoqué el trabajo:
+Aqui dejo los ejercicios de JavaScript: 
+https://pablorossl.github.io/ConquerBlocks-JavaScript/
+
+También aprovecho para dejar una nota rápida para que sepáis cómo enfoqué el trabajo:
 
 - Enfoque: me centré en que la funcionalidad y la lógica fueran correctas (validaciones,
 	eventos, persistencia), basicamente, JavaScript. Por eso el aspecto visual es sencillo y no está muy pulido, no usé CSS para centrarme en la lógica, no lo vi necesario para que es algo sencillo, no obsante si eso me va a rebajar puntos me lo decis y mejoro los ejercicios visualmente.
