@@ -1,21 +1,25 @@
 <!doctype html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Ejercicio 7</title>
-  <style>
-    .project-link { display:inline-block; text-decoration:none; background:linear-gradient(90deg,#0b66d1,#0b9bd1); color:#fff; padding:10px 14px; border-radius:8px; font-weight:600; box-shadow:0 6px 18px rgba(11,105,209,0.18); transition:transform .15s ease, box-shadow .15s ease, filter .15s ease}
-    .project-link:hover { box-shadow:0 12px 30px rgba(11,105,209,0.22); filter:brightness(1.2) }
-  </style>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Generador de contraseña</title>
 </head>
 <body>
-  <div class="card">
-    <h1>Ejercicio 7</h1>
-    <p class="note">Hola profe! En vez de resolver el ejercicio aquí, dejo el link de mi proyecto que está más trabajado.</p>
-    <p><a class="project-link" href="https://github.com/Pablorossl/PassFort" target="_blank" rel="noopener">Proyecto PassFort</a></p>
-    <p class="meta"><a class="back" href="../index.html">Volver al índice</a></p>
-  </div>
-  <script src="../js/js_ejercicio7.js"></script>
+  <p><a href="../index.html">Volver al índice</a></p>
+  <h1>Ejercicio 7 - Generador de contraseñas</h1>
+		<form id="password-form" aria-describedby="error">
+			<label for="length">Longitud (mínimo 4):</label>
+			<input type="number" id="length" name="length" min="4" placeholder="Ej: 12">
+			<button type="submit">Generar contraseña</button>
+		</form>
+		<p id="error" style="color:red"></p>
+		<p><strong>Contraseña generada:</strong></p>
+		<output id="result" aria-live="polite"></output>
+    <hr>
+    <p>PROYECTO PERSONAL:</p>
+      <p><a href="https://github.com/Pablorossl/PassFort">Repositorio GitHub</a></p>
+	<script src="../js/js_ejercicio7.js"></script>
 </body>
 </html>
+

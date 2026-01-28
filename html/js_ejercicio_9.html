@@ -3,12 +3,24 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Ejercicio 9</title>
+  <title>Lista de tareas (Ejercicio 9)</title>
 </head>
 <body>
-  <h1>Ejercicio 9</h1>
-  <p>Implementa aquí el ejercicio 9.</p>
   <p><a href="../index.html">Volver al índice</a></p>
+    <h1>Ejercicio 9 - Lista de tareas</h1>
+
+    <form id="task-form">
+      <label for="task-input" class="small" style="display:none">Nueva tarea</label>
+      <input id="task-input" type="text" placeholder="Escribe una tarea..." aria-label="Nueva tarea">
+      <button type="submit">Añadir</button>
+    </form>
+
+    <ul id="tasks-list" aria-live="polite"></ul>
+
+    <div class="controls">
+      <button id="clear-completed">Limpiar completadas</button>
+      <button id="clear-all" style="margin-left:8px;background:#ef4444">Borrar todas</button>
+    </div>
   <script src="../js/js_ejercicio9.js"></script>
 </body>
 </html>
